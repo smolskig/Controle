@@ -3,7 +3,7 @@ const constructor = require('../models/colaborador') // importando o Schema cola
 module.exports = { // exporta os métodos
 
 
-    async store(req,res){ // rota de post NOTA: lembre-se de usar async e await para requisições
+    async store(req,res){ // rota de post NOTA: lembre-se de usar async, try e catch para  as requisições
         try{
             const data = await (constructor.create(req.body)) // criando um modelo com as informações passadas no corpo da requisição
         
